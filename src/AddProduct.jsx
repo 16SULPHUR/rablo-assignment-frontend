@@ -74,6 +74,7 @@ const AddProduct = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10">
+        <h1 className="text-2xl font-bold mb-4">Stock Express</h1>
       <h1 className="text-2xl font-bold mb-4">Add Product</h1>
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
