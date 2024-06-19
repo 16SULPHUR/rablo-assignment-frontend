@@ -61,7 +61,7 @@ const Edit = () => {
     if (validateForm()) {
       axios
         // .put(`http://127.0.0.1:8000/api/products/${id}`, formData, {
-        .put(`https://se-apis.onrender.com/api/products/single/${id}`, formData, {
+        .put(`https://se-apis.onrender.com/api/products/${id}`, formData, {
           headers: {
             Authorization: localStorage.getItem("token"),
           },
@@ -88,7 +88,7 @@ const Edit = () => {
   const fetchProduct = async () => {
     axios
       // .post("https://se-apis.onrender.com/api/products", formData)
-      .get(`https://se-apis.onrender.com/api/products/${id}`, {
+      .get(`https://se-apis.onrender.com/api/products/single/${id}`, {
         headers: {
           Authorization: localStorage.getItem("token"),
         },
